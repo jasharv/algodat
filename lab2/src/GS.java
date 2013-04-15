@@ -4,16 +4,36 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.SortedSet;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class GS {
 	public static void main(String[] args) {	        
 		ArrayList<String> allaFiler = new ArrayList<String>();
+		ArrayList<Node> graph = new ArrayList<Node>();
 		allaFiler.add("testlab2/words-10-test");
 		allaFiler.add("testlab2/words-250-test");
-		allaFiler.add("testlab2/words-5757-test")
+		allaFiler.add("testlab2/words-5757-test");
 		
 		for(String fileNames:allaFiler){
 
+			Scanner scan = new Scanner(new File(fileNames + ".dat.txt"));
+			ArrayList<String> words = new ArrayList<String>();
+			while(scan.hasNext()) {
+				words.add(scan.nextLine());
+			}
+			for(String word: words){
+				graph.add(new Node(word));
+				
+				for(String otherWord: words){
+					if(otherWord.contains(word.substring(1,1)){
+						
+					}
+				}
+			}
+			
+			
+			
 			
 			
 			
@@ -40,13 +60,13 @@ public class GS {
 			System.out.println(outPut[i]);
 			if(!(outFile[i].equals(outPut[i]))){
 				
-				System.out.println("s��mst");
+				System.out.println("samst");
 				failed = true;
 			}
 			
 		}
 		if(!failed){
-		System.out.println("Det st��mmer j��vligt bra \n");
+		System.out.println("Det stammer javligt bra \n");
 		}
      
         }
