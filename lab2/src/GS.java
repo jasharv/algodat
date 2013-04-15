@@ -26,7 +26,7 @@ public class GS {
 				graph.add(new Node(word));
 				
 				for(String otherWord: words){
-					if(otherWord.contains(word.substring(1,1)){
+					if(otherWord.contains(word.substring(1,1))){
 						
 					}
 				}
