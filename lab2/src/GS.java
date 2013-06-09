@@ -31,7 +31,7 @@ public class GS {
 						break;
 					}
 				}
-				if (node == null) {
+				if (node == null) { //null
 					node = new Node(word);
 					graph.add(node);
 				}
